@@ -1,7 +1,7 @@
 const todoList = () => {
-  all = [];
+  const all = [];
 
-  var today = new Date().toLocaleDateString("en-CA");
+  let today = new Date().toLocaleDateString("en-CA");
   const add = (todoItem) => {
     all.push(todoItem);
   };
@@ -39,7 +39,6 @@ const todoList = () => {
     overdue,
     dueToday,
     dueLater,
-    toDisplayableList,
   };
 };
 

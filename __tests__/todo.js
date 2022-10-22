@@ -6,8 +6,8 @@ const { all, markAsComplete, add, overdue, dueLater, dueToday } = todoList();
 const formattedDate = (d) => {
   return d.toLocaleDateString("en-CA");
 };
-var dateToday = new Date();
-var today = formattedDate(new Date());
+let dateToday = new Date();
+let today = formattedDate(new Date());
 let yesterday = formattedDate(
   new Date(new Date().setDate(dateToday.getDate() - 1))
 );
@@ -31,7 +31,7 @@ describe("Todolist Test Suit", () => {
   test("Add a new todo in list", () => {
     const todoItemCount = all.length;
     add({
-      title: "todo-3",
+      title: "todo - 3",
       completed: false,
       dueDate: today,
     });
